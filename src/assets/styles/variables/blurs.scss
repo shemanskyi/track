@@ -1,0 +1,40 @@
+/* stylelint-disable at-rule-no-unknown */
+@mixin blur-light-xs {
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(4px);
+}
+
+@mixin blur-light-md {
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(8px);
+}
+
+@mixin blur-light-lg {
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(12px);
+}
+
+@mixin blur-light-xl {
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(20px);
+}
+
+@mixin blur-dark-xs {
+  background: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(4px);
+}
+
+@mixin blur-dark-md {
+  background: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(8px);
+}
+
+@mixin blur-dark-lg {
+  background: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(12px);
+}
+
+@mixin blur-dark-xl {
+  background: rgb(0 0 0 / 60%);
+  backdrop-filter: blur(20px);
+}

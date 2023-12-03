@@ -1,0 +1,10 @@
+{
+  "common": {
+    "title": "Applicant Tracking System",
+    "dashboard": "Dashboard",
+    "companies": "Companies",
+    "candidates": "Candidates",
+    "jobs": "Jobs",
+    "empty": "Not ready yet..."
+  }
+}

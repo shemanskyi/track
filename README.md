@@ -1,15 +1,4 @@
-# React Starter kit using TS, JS, Babel, Jest, Webpack
 
-## About showing errors by VS Code.
-
-Added empty dummy.ts.
-
-1. Close all open files
-2. Open dummy.ts
-3. Ctrl + Shift + P -> TypeScript: Restart TS Server
-4. Shown errors will be gone.
-
-Now I cannot explain this behaviour :/
 
 ## Run some command from list:
 
