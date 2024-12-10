@@ -28,7 +28,7 @@ import { CSSObject, styled, Theme, useTheme } from '@mui/material/styles';
 // import { LayoutType } from './Layout.types';
 import { MENU_ITEMS } from './Layout.constants';
 
-import styles from './Layout.styles.scss';
+import styles from './Layout.styles.css';
 
 const drawerWidth = 240;
 
