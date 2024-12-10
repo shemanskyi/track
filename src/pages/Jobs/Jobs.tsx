@@ -1,29 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { DataGrid, GridRowParams, GridToolbar } from '@mui/x-data-grid';
-import { Layout, RightPanel } from 'components';
+import { Layout } from 'components';
 
 import { columns } from './Jobs.constants';
 import { JOBS } from './Jobs.data';
-import { Job } from './components/Job/Job';
 
 export default function Jobs() {
-  const [open, setOpen] = useState(false);
-  const [job, setJob] = useState(null);
 
-  const handleShowPanel = (params: GridRowParams) => {
-      const { row } = params;
-      setJob(row);
-      setOpen(true);
+  const navigate = useNavigate();
+
+  const handleRowClick = (params: GridRowParams) => {
+      const { id } = params.row;
+      navigate(`${id}`);
   };
 
-  const handleClosePanel = () => {
-    setJob(null);
-      setOpen(false);
-  };
   return (
     <Layout>
       <Stack direction="row" spacing={2} sx={{ paddingBottom: '1rem'}}>
@@ -47,7 +42,7 @@ export default function Jobs() {
             },
           }}
           onRowClick={(params: GridRowParams) => {
-            handleShowPanel(params);
+            handleRowClick(params);
           }}
           pageSizeOptions={[5]}
           rows={JOBS}
@@ -59,12 +54,6 @@ export default function Jobs() {
           slots={{ toolbar: GridToolbar }}
         />
       </Box>
-      {open && <RightPanel onClose={handleClosePanel} open={open}>
-        <Box sx={{ marginTop: '64px' }}>
-            {/*@ts-ignore*/}
-            <Job job={job} />
-        </Box>
-      </RightPanel>}
     </Layout>
   );
 }

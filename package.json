@@ -92,6 +92,7 @@
     "@mui/icons-material": "^6.1.6",
     "@mui/material": "^6.1.6",
     "@mui/x-data-grid": "^7.22.3",
+    "@mui/x-data-grid-premium": "^7.23.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@toolpad/core": "^0.8.1",
     "i18next": "^23.7.6",

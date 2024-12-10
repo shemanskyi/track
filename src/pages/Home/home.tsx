@@ -7,8 +7,8 @@ import { DataGrid,  GridToolbar } from '@mui/x-data-grid';
 import { Layout } from 'components';
 import { columns as candidatesColumns } from 'pages/Candidates/Candidates.constants';
 import { CANDIDATES } from 'pages/Candidates/Candidates.data';
-import { COMPANIES } from 'pages/Companies/Companies.data';
-import { JOBS } from 'pages/Jobs/Jobs.data';
+// import { COMPANIES } from 'pages/Companies/Companies.data';
+// import { JOBS } from 'pages/Jobs/Jobs.data';
 
 export default function Home() {
   return (
